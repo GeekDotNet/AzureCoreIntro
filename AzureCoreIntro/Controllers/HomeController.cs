@@ -22,6 +22,10 @@ namespace AzureCoreIntro.Controllers
             var model = configuration["Greeting"];
             return View("Index", model);
         }
+        public IActionResult Test()
+        {
+            throw new NotImplementedException("Feature is not supported");
+        }
 
         public IActionResult About()
         {

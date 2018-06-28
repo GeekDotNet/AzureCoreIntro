@@ -35,7 +35,7 @@ namespace AzureCoreIntro
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddSingleton(typeof(ImageStore));
             services.AddMvc();
         }
 

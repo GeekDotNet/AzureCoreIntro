@@ -18,7 +18,7 @@ namespace AzureCoreIntro
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
-            MigrateDatbase(host);
+           // MigrateDatbase(host);
             host.Run();
         }
 

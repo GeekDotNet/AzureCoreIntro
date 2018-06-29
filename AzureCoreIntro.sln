@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureCoreIntro", "AzureCoreIntro\AzureCoreIntro.csproj", "{5E9CE76D-E4D6-46DD-BC68-3D140DCCE739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{DCA59182-2DD1-4A62-9BEA-E3447A4E75F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{DCA59182-2DD1-4A62-9BEA-E3447A4E75F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

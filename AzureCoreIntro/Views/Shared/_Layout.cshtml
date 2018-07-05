@@ -45,8 +45,11 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - AzureCoreIntro</p>
-            @(Environment.GetEnvironmentVariable("REGION_NAME")??"local");
+            <p>
+                &copy; 2018 - AzureCoreIntro
+                @(Environment.GetEnvironmentVariable("REGION_NAME") ?? "local");
+            </p>
+           
         </footer>
     </div>
 

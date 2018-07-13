@@ -36,6 +36,14 @@ namespace AzureCoreIntro
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddSingleton(typeof(ImageStore));
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("AspnetCoreIntro-v1", new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Title = "AspnetCoreIntro",
+                    Version = "1.0.0"
+                });
+            });
             services.AddMvc();
         }
 
@@ -63,6 +71,8 @@ namespace AzureCoreIntro
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/AspnetCoreIntro-v1/swagger.json", "AspnetCoreIntro"); });
         }
     }
 }

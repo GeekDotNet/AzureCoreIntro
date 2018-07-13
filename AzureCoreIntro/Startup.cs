@@ -38,9 +38,9 @@ namespace AzureCoreIntro
             services.AddSingleton(typeof(ImageStore));
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("AspnetCoreIntro-v1", new Swashbuckle.AspNetCore.Swagger.Info
+                options.SwaggerDoc("azureaspnetcoreintro-v1", new Swashbuckle.AspNetCore.Swagger.Info
                 {
-                    Title = "AspnetCoreIntro",
+                    Title = "azureaspnetcoreintro",
                     Version = "1.0.0"
                 });
             });
@@ -72,7 +72,7 @@ namespace AzureCoreIntro
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
             app.UseSwagger();
-            app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/AspnetCoreIntro-v1/swagger.json", "AspnetCoreIntro"); });
+            app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/azureaspnetcoreintro-v1/swagger.json", "AspnetCoreIntro"); });
         }
     }
 }

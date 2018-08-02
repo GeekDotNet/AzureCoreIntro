@@ -72,7 +72,8 @@ namespace AzureCoreIntro
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
             app.UseSwagger();
-            app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/azureaspnetcoreintro-v1/swagger.json", "AspnetCoreIntro"); });
+
+            app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/azureaspnetcoreintro-v1/swagger.json", "azureaspnetcoreintro-v1"); });
         }
     }
 }
